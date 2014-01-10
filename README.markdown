@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ifsnop/simplepie.png?branch=master)](https://travis-ci.org/ifsnop/simplepie)
+
 SimplePie
 =========
 
