@@ -316,7 +316,14 @@ class SimplePie_IRI
 							}
 							elseif (($last_segment = strrpos($base->ipath, '/')) !== false)
 							{
-								$target->ipath = substr($base->ipath, 0, $last_segment + 1) . $relative->ipath;
+								if ($last_segment !== 0)
+								{
+									$target->ipath = substr($base->ipath, 0, $last_segment + 1) . $relative->ipath;
+								}
+								else
+								{
+									$target->ipath = $base->ipath . '/' . $relative->ipath;
+								}
 							}
 							else
 							{
